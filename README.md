@@ -20,7 +20,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-built-with-css-flexbox-grid-and-css-positioning-RuHX409sTZ)
 - Live Site URL: [GitHub](https://johnnysedh3lllo.github.io/profile-card-component-frontend-mentor/)
 
 ## My process
