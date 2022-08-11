@@ -1,0 +1,173 @@
+:root {
+  /* COLORS */
+  --clr-primary-100: hsl(185, 75%, 39%);
+  --clr-primary-200: hsl(229, 23%, 23%);
+  --clr-primary-300: hsl(227, 10%, 46%);
+
+  --clr-neutral-100: hsl(0, 0%, 59%);
+
+  /* FONT SIZE */
+  --fs-primary: 1.125rem;
+
+  /* FONT FAMILY */
+  --ff-primary: "Kumbh Sans", san-serif;
+
+  /* FONT WEIGHT  */
+  --fw-primary-100: 400;
+  --fw-primary-200: 700;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* I STARTED HERE */
+body {
+  font-family: var(--ff-primary);
+  background: 
+  url(bg-pattern-top.svg) -87% 140%  no-repeat,
+  url(bg-pattern-bottom.svg) 150% -95% var(--clr-primary-100) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 25rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  font-weight: var(--fw-primary-100);
+  color: var(--clr-primary-300);
+}
+
+.profile-picture {
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.profile-card-head {
+  text-align: center;
+line-height: 1.7;
+  padding: 5em 0 1em 0;
+}
+
+.profile-card-head p{
+    font-size: 1em;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 21%;
+  left: 32%;
+}
+
+h1,
+h2 {
+  font-size: var(--fs-primary);
+  font-weight: var(--fw-primary-200);
+  color: var(--clr-primary-200);
+}
+
+p{
+    font-size: .8em;
+}
+
+span {
+     font-weight: var(--fw-primary-100);
+  color: var(--clr-primary-300);
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: var(--clr-neutral-100);
+  opacity: 0.4;
+}
+
+.profile-card-footer {
+    text-align: center;
+  padding: 1em;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 375px) {
+    body{
+         background: 
+  url(bg-pattern-top.svg) 121% 150% no-repeat,
+  url(bg-pattern-bottom.svg) -20% -30% var(--clr-primary-100) no-repeat;
+    }
+}
